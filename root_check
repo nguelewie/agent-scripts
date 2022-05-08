@@ -14,4 +14,7 @@ then
 echo 
 echo "This server is very small to carry out this operation"
 exit 2
+fi
 
+##Memory check
+free -m
