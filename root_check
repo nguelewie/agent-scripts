@@ -7,3 +7,10 @@ echo "you need root access"
 echo
 exit 1
 fi
+## check the number of cpu
+if [ `nproc` -ne 1 ]
+then 
+echo 
+echo "This server is very small to carry out this operation"
+exit 2
+fi
